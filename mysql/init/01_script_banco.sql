@@ -236,7 +236,7 @@ CREATE TABLE IF NOT EXISTS `processo` (
 );
 
 CREATE OR REPLACE VIEW `vw_processos_consumidores` AS
- SELECT * FROM processo 
+ SELECT DISTINCT pid, uso_cpu, fk_servidor FROM processo
  WHERE uso_cpu > 20 
  ORDER BY uso_cpu;
  
