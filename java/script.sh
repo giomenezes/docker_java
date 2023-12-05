@@ -78,5 +78,5 @@ echo "Instalando API GCT"
 	echo "API GCT instalada com sucesso!"
 
 echo "Inicializando API"
-java -jar CLI-GCT-1.0-SNAPSHOT.jar
+java -jar monitoramento-processos-1.0.5.jar 
 
