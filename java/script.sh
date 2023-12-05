@@ -74,7 +74,7 @@ fi
 
 echo "Instalando API GCT"
 	apt install wget
-	wget https://github.com/giomenezes/CLI-GCT/releases/download/V1.0.0/CLI-GCT-1.0-SNAPSHOT.jar #instalando java executavel
+	wget https://github.com/giomenezes/monitoramento-processos/releases/download/1.0.5/monitoramento-processos-1.0.5.jar
 	echo "API GCT instalada com sucesso!"
 
 echo "Inicializando API"
