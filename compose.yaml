@@ -1,0 +1,23 @@
+version: '2.0'
+
+services:
+ mysql:
+  container_name: gct_mysql
+  image: mysql:latest
+  restart: always 
+  environment:
+   MYSQL_ROOT_PASSWORD: urubu100
+   MYSQL_DATABASE: gct_individual
+  volumes:
+   - ./init-scripts:/docker-entrypoint-initdb.d
+  ports: 
+   - "3306:3306"
+ app:
+  container_name: gct_java
+  image: openjdk:17-jdk-slim
+  working_dir: /home
+  tty: true
+  volumes:
+    - ./java:/home
+volumes:
+ gct_mysql:
